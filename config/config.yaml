@@ -1,0 +1,19 @@
+app:
+  name: "MalwareLinkDetector"
+  version: "1.0.0"
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  indexes: "data/indexes"
+  logs: "logs"
+
+embedding:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  batch_size: 32 # Adjust based on VRAM/Ram
+  device: "cpu" # or "cuda"
+
+vectordb:
+  index_type: "IVF100,PQ8" # efficient for large datasets
+  dimension: 384 # matches all-MiniLM-L6-v2
+  metric: "cosine" 
