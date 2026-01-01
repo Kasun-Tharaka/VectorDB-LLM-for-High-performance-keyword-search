@@ -11,7 +11,7 @@ paths:
 embedding:
   model_name: "sentence-transformers/all-MiniLM-L6-v2"
   batch_size: 32 # Adjust based on VRAM/Ram
-  device: "cpu" # or "cuda"
+  device: "cpu" # or "cuda". cuda is the recommended for faster processing
 
 vectordb:
   index_type: "IVF100,PQ8" # efficient for large datasets
