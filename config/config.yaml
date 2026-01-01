@@ -16,4 +16,4 @@ embedding:
 vectordb:
   index_type: "IVF100,PQ8" # efficient for large datasets
   dimension: 384 # matches all-MiniLM-L6-v2
-  metric: "cosine" 
+  metric: "cosine" # similarity metric

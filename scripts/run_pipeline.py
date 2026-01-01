@@ -6,6 +6,7 @@ import numpy as np
 project_root = Path(__file__).resolve().parent.parent
 sys.path.append(str(project_root))
 
+# import necessary modules (local imports after path adjustment)
 from src.ingestion.reader import DatasetReader
 from src.analysis.search_engine import SearchEngine
 from src.core.config_loader import config
