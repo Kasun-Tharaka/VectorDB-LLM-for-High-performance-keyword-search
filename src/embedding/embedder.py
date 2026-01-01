@@ -13,6 +13,7 @@ class EmbeddingModel:
         logger.info(f"Loading embedding model: {model_name} on {device}")
         
         try:
+            # loading specific model from sentence-transformers
             self.model = SentenceTransformer(model_name, device=device)
         except Exception as e:
             logger.error(f"Failed to load model {model_name}: {e}")
