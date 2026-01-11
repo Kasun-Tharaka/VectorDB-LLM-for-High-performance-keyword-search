@@ -22,7 +22,7 @@ class SearchEngine:
 
     def search(self, query: str, k: int = 5):
         """
-        Embeds the query and searches the vector DB.
+        Embeds the query and searches in the vector DB.
         """
         logger.info(f"Searching for: {query}")
         query_vec = self.embedder.encode([query])
