@@ -35,5 +35,7 @@ def test_ingestion():
             
     print(f"Total entries processed: {count}")
 
+
+
 if __name__ == "__main__":
     test_ingestion()

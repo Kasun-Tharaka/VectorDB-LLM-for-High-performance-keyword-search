@@ -28,6 +28,6 @@ class LLMHelper:
                 "Detected common phishing patterns include similar subdomains and path structures."
             )
         
-        # Here you would integrate OpenAI, Anthropic, or Local LLM
+        # Here you would integrate OpenAI, Google, Anthropic, or Local LLM
         # e.g., using `openai` library
         return "LLM Integration not fully configured for production provider."
