@@ -10,7 +10,7 @@ def setup_logger(name):
     if logger.handlers:
         return logger
 
-    # Format
+    # Format of loggings
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
     # Console Handler
