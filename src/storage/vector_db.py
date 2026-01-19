@@ -30,7 +30,7 @@ class VectorDB:
         # But user mentioned 5TB, so we should allow training.
         
         # We'll use a simple factory string.
-        # Note: IVF requires training.
+        # Note: IVF requires here to training.
         try:
             # Using IDMap to map vectors to specific IDs if needed, 
             # here we just rely on positional verification.
