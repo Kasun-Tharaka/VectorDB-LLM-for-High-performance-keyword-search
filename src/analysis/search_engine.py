@@ -16,7 +16,7 @@ class SearchEngine:
         if not texts:
             return
         embeddings = self.embedder.encode(texts)
-        # Normalize for cosine similarity if using IP metric
+        # Normalize for cosine-similarity if using IP metric
         faiss.normalize_L2(embeddings) 
         self.vector_db.add(embeddings)
 
